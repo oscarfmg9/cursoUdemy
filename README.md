@@ -1,5 +1,9 @@
 # CursoUdemy
 
+Seccion 3, Clase 6
+
+Crear componentes, plantillas y estilos
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
 ## Development server
