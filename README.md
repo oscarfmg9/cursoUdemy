@@ -1,8 +1,14 @@
 # CursoUdemy
 
-Seccion 3, Clase 6
+## Seccion 3, Clase 6
 
-Crear componentes, plantillas y estilos
+    Crear componentes, plantillas y estilos.
+
+## Seccion 3, Clase 7
+
+    Creacion de varios componentes.
+
+## Angular ReadMe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
