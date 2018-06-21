@@ -1,5 +1,14 @@
+Padre
 <h1>{{title}}</h1>
     <ul>
         <li>Article 1</li>
         <li>Article 2</li>
     </ul>
+<hr/>
+
+Park's Name:
+<input type="text" [(ngModel)]="parksName" (keyup)="showName()" />
+
+<br/>
+Hijo
+<app-parks></app-parks>
