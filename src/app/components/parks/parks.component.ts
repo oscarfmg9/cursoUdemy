@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
     selector: 'app-parks',
@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     styleUrls: ['parks.component.scss']
 })
 
-export class ParksComponent {
+export class ParksComponent implements OnChanges {
     @Input() name: string;
     @Input() height: number;
     public vegetation: string;
@@ -19,6 +19,10 @@ export class ParksComponent {
         this.height = 450;
         this.vegetation = 'Alta';
         this.status = true;
+    }
+
+    ngOnChanges(changes: SimpleChanges) {
+        console.log('changes on properties')
     }
 
     showEvent() {
