@@ -13,8 +13,27 @@ Padre
 <p>
     Nombre del parque: {{parksName}}
 </p>
+
+<div *ngIf="myPark">
+    <h4>
+        Datos desde el hijo
+    </h4>
+    <ol>
+        <li>{{ myPark.name }}</li>
+        <li>{{ myPark.height }}</li>
+        <li>{{ myPark.vegetation }}</li>
+        <li>{{ myPark.status }}</li>
+    </ol>
+</div>
+
+<hr>
+
 <p *ngIf="parksName">
     <br/>
     Hijo
-    <app-parks [name]="parksName" [height]="567"></app-parks>
+    <app-parks
+        [name]="parksName"
+        [height]="567"
+        (parksData)="showDataPark($event)"
+        ></app-parks>
 </p>
