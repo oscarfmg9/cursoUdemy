@@ -12,6 +12,14 @@
 
     Inputs
 
+## Seccion 4, Clase 9
+
+    Outputs
+
+## Seccion 5, Clase 10
+
+    OnChanges
+
 ## Angular ReadMe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
