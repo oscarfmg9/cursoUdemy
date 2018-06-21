@@ -5,10 +5,16 @@ Padre
         <li>Article 2</li>
     </ul>
 <hr/>
+<p>
+    Park's Name:
+    <input type="text" [(ngModel)]="parksName" (keyup)="showName()" />
+</p>
 
-Park's Name:
-<input type="text" [(ngModel)]="parksName" (keyup)="showName()" />
-
-<br/>
-Hijo
-<app-parks></app-parks>
+<p>
+    Nombre del parque: {{parksName}}
+</p>
+<p *ngIf="parksName">
+    <br/>
+    Hijo
+    <app-parks [name]="parksName" [height]="567"></app-parks>
+</p>
