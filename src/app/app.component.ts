@@ -9,7 +9,7 @@ export class AppComponent implements DoCheck {
   title = 'Udemy Course';
 
   ngDoCheck() {
-    console.log('Metodo ngDoCheck lanzado');
+    // console.log('Metodo ngDoCheck lanzado');
   }
 
 }

@@ -28,6 +28,10 @@
 
     DoCheck
 
+## Seccion 5, Clase 13
+
+    OnDestroy
+
 ## Angular ReadMe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
