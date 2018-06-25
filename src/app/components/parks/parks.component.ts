@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit, DoCheck } from '@angular/core';
 
 @Component({
     selector: 'app-parks',
@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnIni
     styleUrls: ['parks.component.scss']
 })
 
-export class ParksComponent implements OnChanges, OnInit {
+export class ParksComponent implements OnChanges, OnInit, DoCheck {
     @Input() name: string;
     @Input() height: number;
     public vegetation: string;
@@ -22,11 +22,15 @@ export class ParksComponent implements OnChanges, OnInit {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        console.log(changes);
+        console.log('Metodo OnChanges lanzado');
     }
 
     ngOnInit() {
-        console.log('metodo on Init lanzado');
+        console.log('Metodo OnInit lanzado');
+    }
+
+    ngDoCheck() {
+        console.log('Metodo ngDoCheck lanzado');
     }
 
     showEvent() {
