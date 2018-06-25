@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-parks',
@@ -6,7 +6,7 @@ import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from
     styleUrls: ['parks.component.scss']
 })
 
-export class ParksComponent implements OnChanges {
+export class ParksComponent implements OnChanges, OnInit {
     @Input() name: string;
     @Input() height: number;
     public vegetation: string;
@@ -22,7 +22,11 @@ export class ParksComponent implements OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        console.log('changes on properties')
+        console.log(changes);
+    }
+
+    ngOnInit() {
+        console.log('metodo on Init lanzado');
     }
 
     showEvent() {

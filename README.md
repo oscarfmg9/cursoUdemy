@@ -20,6 +20,10 @@
 
     OnChanges
 
+## Seccion 5, Clase 11
+
+    OnInit
+
 ## Angular ReadMe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.

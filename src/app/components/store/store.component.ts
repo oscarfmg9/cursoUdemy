@@ -20,7 +20,7 @@ export class StoreComponent {
     }
 
     showDataPark(event) {
-        console.log(event);
+        console.log('Event was Created');
         this.myPark = event;
     }
 
